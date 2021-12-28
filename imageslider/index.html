@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+        <img src="img/img1.jpeg" style="width: 500px">
+        <div class="text"><h1>Great Wall Of China</h1></div>
+        <p>The Great Wall of China <b>is a series of fortifications that were built across the historical northern borders of ancient Chinese states.</b>It is the longest structure humans have ever built. It is about 21,196 kilometers long, 9.1 metres (30 feet) wide and 15 metres high.</p>
+      </div>
+  
+    
+  <div class="mySlides fade">
+      <img src="img/img2.jpeg"style="width: 500px" >
+      <div class="text"><h1>Chichén Itzá</h1></div>
+      <p>Chichén Itzá, <b>ruined ancient Maya city</b>occupying an area of 4 square miles (10 square km) in south-central Yucatán state, Mexico. It is thought to have been a religious, military, political, and commercial centre that at its peak would have been home to 35,000 people.</p>
+    </div>
+    
+  
+    <div class="mySlides fade">
+      <img src="./img/img3.jpeg" style="width: 500px">
+      <div class="text"><h1>Petra</h1></div>
+      <p>Petra is <b>half-built, half-carved into the rock</b>, and is surrounded by mountains riddled with passages and gorges. It is one of the world's most famous archaeological sites, where ancient Eastern traditions blend with Hellenistic architecture.</p>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="./img/img4.jpeg" style="width: 500px">
+        <div class="text"><h1>Machu Picchu</h1></div>
+        <p>Machu Picchu is <b>a 15th-century Inca site located on a ridge between the Huayna Picchu and Machu </b> mountains in Peru. It sits 7,970 feet (2,430 meters) above sea level on the eastern slope of the Andes and overlooks the Urubamba River hundreds of feet below.</p>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="./img/img5.jpeg" style="width: 500px">
+        <div class="text"><h1>Christ The Reedemer</h1></div>
+        <p>Christ the Redeemer is <b>the largest art deco statue in the world.</b> It is 98 feet tall (not including the 26 foot pedestal), and the arms stretch to 92 feet wide. ... The statue is considered an icon of Rio de Janeiro and Brazil. Christ the Redeemer is the 5th largest statue of Jesus.</p>
+      </div>
+  
+      <div class="mySlides fade">
+        <img src="./img/img6.jpeg" style="width: 500px">
+        <div class="text"><h1>Colosseum</h1></div>
+        <p>The Colosseum is <b>an amphitheatre built in Rome</b> under the Flavian emperors of the Roman Empire. It is also called the Flavian Amphitheatre. It is an elliptical structure made of stone, concrete, and tuff, and it stands four stories tall at its highest point. ... The Colosseum was famously used for gladiatorial combat.</p>
+      </div>
+  
+      <div class="mySlides fade">
+       <img src="./img/img7.jpeg" style="width: 500px">
+        <div class="text"> <h1>Taj Mahal</h1> </div>
+        <p><b>An immense mausoleum of white marble</b>, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage.</p>
+     </div>
+    
+  <br>
+  
+ 
+  <div style="text-align:center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
+</body>
+</html>
